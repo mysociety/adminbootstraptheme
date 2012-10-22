@@ -10,7 +10,7 @@
           <b><%=name%></b>
         </td>
         <td>
-          <% if column_name == 'home_page' %>
+          <% if ['home_page', 'publication_scheme', 'disclosure_log'].include? column_name %>
             <%= link_to(h(value), value)  %>
           <% elsif column_name == 'request_email' %>
             <%= link_to(h(value), "mailto:#{value}")  %>

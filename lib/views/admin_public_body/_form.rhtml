@@ -52,6 +52,12 @@
         </div>
       </div>
       <div class="control-group">
+        <label for="<%= form_tag_id(t.object_name, :disclosure_log, locale) %>" class="control-label"><%=_("Disclosure log URL")%></label>
+        <div class="controls">
+          <%= t.text_field :disclosure_log, :size => 60, :id => form_tag_id(t.object_name, :disclosure_log, locale), :class => "span3" %>
+        </div>
+      </div>
+      <div class="control-group">
         <label for="<%= form_tag_id(t.object_name, :notes, locale) %>" class="control-label"><%=_("Public notes")%></label>
         <div class="controls">
           <%= t.text_area :notes, :rows => 3, :id => form_tag_id(t.object_name, :notes, locale), :class => "span6" %>
