@@ -1,4 +1,23 @@
 <% @title = "Summary" %>
+
+<div class="row">
+  <div class="span12">
+    <h1><%=@title%></h1>
+
+    <ul>
+      <li><%=@public_body_count%> public authorities</li>
+      <li>
+        <%=@info_request_count%> requests, <%=@outgoing_message_count%> outgoing messages,
+        <%=@incoming_message_count%> incoming messages
+      </li>
+      <li><%=@user_count%> users, <%=@track_thing_count%> tracked things</li>
+      <li><%=@comment_count%> annotations</li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
 <div class="row">
   <div class="span12">
     <h1>Things to do</h1>
