@@ -23,6 +23,13 @@ body.admin {
   background-color: white;
 }
 
+/* When the admin stylesheet is loaded (and so the user is seeing the admin  navbar), pad the banner of the front end interface so that it isn't hidden.
+*/
+
+#banner {
+  padding-top: 50px;
+}
+
 .admin {
 
   @import "compass/css3";

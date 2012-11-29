@@ -4,6 +4,10 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 
 body.admin { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #333333; background-color: white; }
 
+/* When the admin stylesheet is loaded (and so the user is seeing the admin  navbar), pad the banner of the front end interface so that it isn't hidden.
+*/
+#banner { padding-top: 50px; }
+
 .admin { /* Allow for input prepend/append in search forms */ /* White icons with optional class, or on hover/active states of certain elements */ /* move down carets for tabs */ @-webkit-keyframes progress-bar-stripes { from { background-position: 40px 0; }
   to { background-position: 0 0; } }
  @-moz-keyframes progress-bar-stripes { from { background-position: 40px 0; }
