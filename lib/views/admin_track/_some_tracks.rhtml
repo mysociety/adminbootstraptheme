@@ -13,11 +13,11 @@
           <a href="#track_<%=track_thing.id%>" data-toggle="collapse" data-parent="requests"><i class="icon-chevron-right"></i></a>
           <%=track_thing.id%>:
           <% if track_thing.public_body_id %>
-            <%= link_to "<code>#{h track_thing.track_query}</code>", main_url(public_body_url(track_thing.public_body)) %>
+            <%= link_to "<code>#{h track_thing.track_query}</code>".html_safe, main_url(public_body_url(track_thing.public_body)) %>
           <% elsif track_thing.info_request_id %>
-            <%= link_to "<code>#{h track_thing.track_query}</code>", main_url(request_url(track_thing.info_request)) %>
+            <%= link_to "<code>#{h track_thing.track_query}</code>".html_safe, main_url(request_url(track_thing.info_request)) %>
           <% elsif track_thing.tracked_user_id %>
-            <%= link_to "<code>#{h track_thing.track_query}</code>", main_url(user_url(track_thing.tracked_user)) %>
+            <%= link_to "<code>#{h track_thing.track_query}</code>".html_safe, main_url(user_url(track_thing.tracked_user)) %>
           <% else %>
             <code><%=h track_thing.track_query%></code>
           <% end %>
